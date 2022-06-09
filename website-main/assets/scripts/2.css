@@ -1,5 +1,10 @@
- .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/-min.jpg");
+.u-section-1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("/website-main/assets/images/-min.jpg");
   background-position: 63.21% 50%;
 }
 
@@ -12,7 +17,7 @@
   font-weight: 400;
   font-family: Montserrat, sans-serif;
   width: 770px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
   margin: 128px auto 0;
 }
 
