@@ -1,6 +1,10 @@
 ### website
 The website of softwcoins
-### Modify
+
+### Modify Code
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/softwcoins/website)
+
+- You can edit the code in your browser by tapping the above badge, or you can follow the below steps to edit the code locally. 
 Clone
 ```sh
 git clone https://github.com/softwcoins/website
