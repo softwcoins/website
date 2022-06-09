@@ -19,8 +19,8 @@ class user(db.Model):
 @app.route("/")
 def home():
     return render_template('index.html')
-@app.route("/app")
-def app():
+@app.route("/dashboard")
+def dashboard():
     return render_template("app.html")
 @app.route("/login",methods=["GET", "POST"])
 def login():    
@@ -30,7 +30,7 @@ def login():
         
         login = user.query.filter_by(username=uname, password=passw).first()
         if login is not None:
-            return redirect(url_for("app"))
+            return redirect(url_for("dashboard"))
     return render_template("login.html")
 
 @app.route("/register", methods=["GET", "POST"])
