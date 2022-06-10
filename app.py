@@ -14,7 +14,7 @@ class user(db.Model):
     username = db.Column(db.String(80))
     email = db.Column(db.String(120))
     password = db.Column(db.String(80))
-    
+        
 
 @app.route("/")
 def home():
