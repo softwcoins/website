@@ -108,3 +108,13 @@
   background-size: cover;
   height: 100vh;
 }
+
+#homenav,
+#aboutnav,
+#contactnav {
+  padding: 10px 20px;
+}
+
+.copyright {
+  font-size: 3.75rem;
+}
