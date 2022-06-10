@@ -14,7 +14,7 @@ class user(db.Model):
     username = db.Column(db.String(80))
     email = db.Column(db.String(120))
     password = db.Column(db.String(80))
-    coins = db.Column(db.string(100000000))
+    coins = db.Column(db.String(100000000))
     
 
 @app.route("/")
