@@ -96,7 +96,6 @@
 .header {
   display: flex;
   align-items: center;
-  background-color: #ffcccb;
 }
 
 .about-us {
@@ -107,10 +106,7 @@
   background-color: #ffcccb;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
-}
-.credits{
-  background-color: aqua;
+  height: 100vh;
 }
 
 #homenav,
@@ -121,7 +117,4 @@
 
 .copyright {
   font-size: 3.75rem;
-}
-.u-logo-image{
-  padding: 0;
 }
