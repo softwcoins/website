@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
-
 .u-section-1 {
   background-image: linear-gradient(
       0deg,
@@ -111,7 +109,7 @@
   background-size: cover;
   height: 50vh;
 }
-.credits {
+.credits{
   background-color: aqua;
 }
 
@@ -124,11 +122,6 @@
 .copyright {
   font-size: 3.75rem;
 }
-.u-logo-image {
+.u-logo-image{
   padding: 0;
-}
-
-.about {
-  font-size: 30px;
-  font-family: "Kdam Thmor Pro", sans-serif;
 }
