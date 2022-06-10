@@ -14,7 +14,7 @@ class user(db.Model):
     username = db.Column(db.String(80))
     email = db.Column(db.String(120))
     password = db.Column(db.String(80))
-    coins = db.Column(db.String(1000000))
+    coinslol = db.Column(db.Integer)
 
 
 @app.route("/")
@@ -40,9 +40,10 @@ def register():
         uname = request.form['uname']
         mail = request.form['mail']
         passw = request.form['passw']
-
-        register = user(username = uname, email = mail, password = passw)
+        coinsxd = 0
+        register = user(username = uname, email = mail, password = passw, coinslol=coinsxd)
         db.session.add(register)
+
         db.session.commit()
 
         return redirect(url_for("login"))
