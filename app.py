@@ -50,7 +50,7 @@ def register():
     return render_template("register.html")
 
 @app.route("/contact")
-def register():
+def contact():
     
     return render_template("contact.html")
 
