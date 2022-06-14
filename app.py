@@ -11,6 +11,7 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'NOBODY-CAN-GUESS-THIS'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 Bootstrap = Bootstrap(app)
 db = SQLAlchemy(app)
 login_manager = LoginManager()
