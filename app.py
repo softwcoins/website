@@ -1,3 +1,4 @@
+from calendar import c
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
@@ -90,6 +91,17 @@ def dashboard():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+@app.route(f'/{URL}/<int:c>')
+def lol(c):
+    coin = c
+    user = User.query.get(current_user.id)
+    user.coins = coin
+    db.session.commit()
+    
+    
+
+    return f"You got {coin} coins"
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
