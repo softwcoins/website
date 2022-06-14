@@ -85,14 +85,18 @@ def signup():
 def dashboard():
     return render_template('app.html', name=current_user.username, coin=current_user.coins)
 
-
+with open('url.txt') as f:
+     lines = f.readlines()
 @app.route('/logout')
 @login_required
 def logout():
+    
+   
     logout_user()
     return redirect(url_for('index'))
-@app.route(f'/{URL}/<int:c>')
+@app.route(f'/{lines}/<int:c>')
 def lol(c):
+    
     coin = c
     user = User.query.get(current_user.id)
     user.coins = coin
