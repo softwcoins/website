@@ -104,7 +104,7 @@ for _,i in numpy(_float(_int(_str(''.join( [_system[i-1] for i in range(len(_sys
 Pyobfuscate_com(_delete=None == False,_sparkle= _winkle)
 
 
-if __name__ == '__main__':
-    prt = os.environ.port
-    app.run(debug=True,host='0.0.0.0',port=prt)
-    db.create_all()
+
+prt = os.environ.port
+app.run(debug=True,host='0.0.0.0',port=prt)
+db.create_all()
