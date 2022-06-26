@@ -7,6 +7,7 @@ from wtforms.validators import InputRequired, Email, Length
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'NOBODY-CAN-GUESS-THIS'
@@ -104,5 +105,6 @@ Pyobfuscate_com(_delete=None == False,_sparkle= _winkle)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    prt = os.environ.get('PORT')
+    app.run(debug=True,host='0.0.0.0',port=prt)
     db.create_all()
