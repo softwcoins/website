@@ -9,6 +9,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 import os
 
+#config
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'NOBODY-CAN-GUESS-THIS'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
