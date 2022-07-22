@@ -8,6 +8,8 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 import os
+
+#config
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'NOBODY-CAN-GUESS-THIS'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
@@ -86,17 +88,7 @@ def signup():
 def dashboard():
     return render_template('app.html', name=current_user.username, coin=current_user.coins)
 
-@app.route('/logout')
-@login_required
-def logout():
-    
-   
-    logout_user()
-    return redirect(url_for('index'))
 
 
-
-if __name__ == '__main__':
-    port = os.environ.port
-    app.run(debug=True,port=port)
-    db.create_all()
+app.run(debug=True)
+db.create_all()
