@@ -90,5 +90,6 @@ def dashboard():
 
 
 
-app.run(debug=True)
-db.create_all()
+if __name__ == "__main__":
+    app.run(debug=False)
+    db.create_all()
